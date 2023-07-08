@@ -9,16 +9,16 @@ strings = ["one", "three", "five", "seven", "eleven", "eighteen"]
 
 
 # TODO: The min() function finds the minimum value
-print(f"the smallest value is : {min(values)}")
-print(f"the smallest value is : {min(strings)}")
+# print(f"the smallest value is : {min(values)}")
+# print(f"the smallest value is : {min(strings)}")
 
 # TODO: The max() function finds the maximum value
-print(f"the smallest value is : {max(values)}")
-print(f"the smallest value is : {max(strings)}")
+# print(f"the smallest value is : {max(values)}")
+# print(f"the smallest value is : {max(strings)}")
 
 # TODO: define a custom "key" function to extract a data field
-print(f"the smallest value is : {min(strings,key=len)}")
-print(f"the smallest value is : {max(strings,key = len)}")
+# print(f"the smallest value is : {min(strings,key=len)}")
+# print(f"the smallest value is : {max(strings,key = len)}")
 
 # TODO: open the data file and load the JSON
 with open("../../30DayQuakes.json", "r") as datafile:
