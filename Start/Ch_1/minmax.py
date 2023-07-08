@@ -24,3 +24,15 @@ strings = ["one", "three", "five", "seven", "eleven", "eighteen"]
 with open("../../30DayQuakes.json", "r") as datafile:
     data = json.load(datafile)
 print(data["metadata"]["title"])
+print(len(data["features"]))
+
+def getmag(dataitem):
+    magnitude = dataitem["properties"]["mag"]
+    if (magnitude is None):
+        magnitude = 0
+    return float(magnitude)
+
+print(min(data["features"], key = getmag))
+print(max(data["features"], key = getmag))
+
+
